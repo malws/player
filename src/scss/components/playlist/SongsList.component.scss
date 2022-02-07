@@ -1,0 +1,31 @@
+.songs-list {
+  list-style-type: none;
+  padding: 0;
+  .songs-list-element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &__number {
+      color: #9a9a9a;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+    &__title {
+      display: flex;
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+      @media (max-width: 500px) {
+        font-size: 14px;
+      }
+      @media (max-width: 400px) {
+        font-size: 12px;
+      }
+      &::after {
+        border-bottom: 2px dotted #9a9a9a;
+        content: "";
+        flex: 1;
+      }
+    }
+  }
+}

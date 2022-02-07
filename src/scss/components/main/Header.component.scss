@@ -1,0 +1,9 @@
+.player-header {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  &__album {
+    text-align: center;
+  }
+}

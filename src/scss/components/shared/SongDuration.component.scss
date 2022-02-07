@@ -1,0 +1,11 @@
+.song-duration {
+  color: #9a9a9a;
+  margin: 0 20px;
+  font-size: 16px;
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
+}

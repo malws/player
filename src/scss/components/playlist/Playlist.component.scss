@@ -1,0 +1,117 @@
+.playlist-container {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  transition: all 300ms cubic-bezier(0.25, 0.1, 0.24, 1);
+  z-index: 7;
+  background-color: #ffffff;
+  .playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__header {
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      background-color: #1b1b1b;
+      position: relative;
+      z-index: 1;
+      &::after {
+        content: "";
+        background-image: url("/images/bg_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1;
+        filter: grayscale(100%);
+        z-index: -1;
+      }
+
+      .title-artist {
+        text-align: left;
+        margin-left: 40px;
+        @media (max-width: 500px) {
+          margin-left: 30px;
+        }
+        @media (max-width: 400px) {
+          margin-left: 20px;
+        }
+        h1 {
+          font-size: 25px;
+          @media (max-width: 500px) {
+            font-size: 21px;
+          }
+          @media (max-width: 400px) {
+            font-size: 16px;
+          }
+        }
+        h3 {
+          font-size: 15px;
+          @media (max-width: 500px) {
+            font-size: 12px;
+          }
+          @media (max-width: 400px) {
+            font-size: 9px;
+          }
+        }
+      }
+      .play {
+        margin-left: auto;
+        margin-right: 0;
+        width: 150px;
+        height: 150px;
+        @media (max-width: 500px) {
+          width: 100px;
+          height: 100px;
+        }
+        @media (max-width: 400px) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+    &__content {
+      margin: 40px;
+      height: 100%;
+    }
+    &__footer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px;
+      box-shadow: 0 0 100px 100px #ffffff;
+      &--shuffle {
+        width: 100%;
+        background-color: #0fd55a;
+        border: none;
+        padding: 20px;
+        border-radius: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 20px;
+        @media (max-width: 500px) {
+          padding: 18px;
+          font-size: 18px;
+        }
+        @media (max-width: 400px) {
+          padding: 14px;
+          font-size: 14px;
+        }
+        &:hover {
+          color: #0fd55a;
+          box-shadow: inset 0px 0px 0px 4px #0fd55a;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}

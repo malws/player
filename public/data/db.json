@@ -1,0 +1,40 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name": "Unreleased",
+      "artist": "Kanye West",
+      "cover_url": "/images/covers/unreleased_cover.png",
+      "songs": [
+        { "id": 1, "title": "Self Conscious", "duration": "261" },
+        { "id": 2, "title": "Livin' In A Movie", "duration": "207" },
+        { "id": 3, "title": "Dark Fantasy", "duration": "312" },
+        { "id": 4, "title": "All of the Lights", "duration": "174" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Feel The Steel",
+      "artist": "Steel Panther",
+      "cover_url": "/images/covers/cover.png",
+      "songs": [
+        { "id": 5, "title": "Death to All But Metal", "duration": "150" },
+        { "id": 6, "title": "Asian Hooker", "duration": "242" },
+        { "id": 7, "title": "Community Property", "duration": "219" },
+        { "id": 8, "title": "Eyes of a Panther", "duration": "217" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "cover_url": "/images/covers/cover-1.png",
+      "songs": [
+        { "id": 5, "title": "Dark Fantasy", "duration": "280" },
+        { "id": 6, "title": "Gorgeous", "duration": "357" },
+        { "id": 7, "title": "Power", "duration": "292" },
+        { "id": 8, "title": "All of the Lights", "duration": "299" }
+      ]
+    }
+  ]
+}
