@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React player
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome! This is the react music player application.
 
 ## Steps to run the application
 
